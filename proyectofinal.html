@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florería Bella Flor</title>
+<link rel="stylesheet" href="proyectofinal.css">
+
+
+<body>
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Florería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #mensaje {
+            font-size: 22px;
+            margin-top: 20px;
+            color: #d63384;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff66a3;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido a la Florería</h1>
+
+    <button onclick="mostrarMensaje()">Mostrar mensaje floral</button>
+
+    <p id="mensaje"></p>
+
+    <script>
+        function mostrarMensaje() {
+            const mensajes = [
+                "🌷 Las flores alegran el alma.",
+                "🌻 ¡Regala flores y reparte sonrisas!",
+                "🌹 Una rosa dice más que mil palabras.",
+                "💐 Cada flor tiene su encanto único.",
+                "🌼 Las flores son la poesía de la naturaleza."
+            ];
+
+            const aleatorio = Math.floor(Math.random() * mensajes.length);
+            document.getElementById("mensaje").innerText = mensajes[aleatorio];
+        }
+    </script>
+
+</body>
+</html>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="arreglos.html">
+        <h1>Florería Cristofer</h1>
+        <div>
+            <a href="#">Inicio</a>
+            <a href="#">Arreglos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- PORTADA -->
+    <section class="hero">
+        <p>Flores frescas, detalles únicos y amor en cada creación.</p>
+    </section>
+
+    <!-- SERVICIOS / TARJETAS -->
+    <section class="contenedor">
+
+        <div class="caja">
+            <h3>Ramos de ocasión</h3>
+            <p>Perfectos para cumpleaños, aniversarios y momentos especiales.</p>
+            <p>Aquí  tenemos todo tipo de flores.</p>
+            <img src="https://th.bing.com/th?q=Floreria+Plaza+Tampico&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&ucfimg=1&mkt=es-MX&cc=MX&setlang=es&adlt=moderate&t=1&mw=247" alt="">
+        </div>
+
+        <div class="caja">
+            <h3>Arreglos personalizados</h3>
+            <p>Elige colores, flores y estilo. Nosotros lo hacemos realidad.</p>
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+
+        <div class="caja">
+            <h3>Decoración para eventos</h3>
+            <p>Bodas, XV años, bautizos o cualquier celebración.</p>
+            <img src="https://www.bing.com/th?id=OPHS.YqTgb0vtRYw0kw474C474&o=5&pid=21.1&w=140&h=140&qlt=100&dpr=1.5&o=2&pcl=f5f5f5" alt="">
+        </div>
+
+        <div class="caja">
+            <h3>Entregas a domicilio</h3>
+            <p>Rápido, seguro y con mucho cariño.</p>
+            <img src="https://th.bing.com/th/id/OIP.UDtIWfdm3bRowCFIMucZOAHaHa?w=156&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.5&pid=1.7&rm=3&ucfimg=1" alt="">
+        </div>
+
+    </section>
+
+    <!-- PIE -->
+    <footer>
+        © 2025 Florería Cristofer – Hecho con amor y dedicación.
+        <p>numero de telefono 6728549107</p>
+        <p>domicilio:la vuelta sinaloa </p>
+    </footer>
+
+</body>
+</html>
